@@ -1,0 +1,20 @@
+access-list cached ACL log flows: total 0, denied 0 (deny-flow-max 4096)
+            alert-interval 300
+access-list lab-dmz-in; 10 elements; name hash: 0x6c02f7b3
+access-list lab-dmz-in line 1 remark napalm lab policy
+access-list lab-dmz-in line 2 extended permit tcp object-group lab-clients object lab-web object-group lab-web-ports log informational interval 300 (hitcnt=0) 
+  access-list lab-dmz-in line 2 extended permit tcp 203.0.113.0 255.255.255.0 host 198.51.100.10 eq https log informational interval 300 (hitcnt=0) 
+  access-list lab-dmz-in line 2 extended permit tcp 203.0.113.0 255.255.255.0 host 198.51.100.10 eq 8443 log informational interval 300 (hitcnt=0) 
+  access-list lab-dmz-in line 2 extended permit tcp host 192.0.2.150 host 198.51.100.10 eq https log informational interval 300 (hitcnt=0) 
+  access-list lab-dmz-in line 2 extended permit tcp host 192.0.2.150 host 198.51.100.10 eq 8443 log informational interval 300 (hitcnt=0) 
+access-list lab-dmz-in line 3 extended permit icmp any any echo (hitcnt=0) 
+access-list lab-dmz-in line 4 extended permit udp any host 198.51.100.53 eq domain inactive (hitcnt=0) (inactive) 
+access-list lab-dmz-in line 5 extended permit tcp any eq 1024 host 198.51.100.11 range 8000 8080 time-range lab-hours (hitcnt=0) (inactive) 
+access-list lab-dmz-in line 6 extended permit ip any6 host fd3a:4ae2:f0a2:100::10 (hitcnt=0) 
+access-list lab-dmz-in line 7 extended permit udp 2001:db8:51::/48 any6 eq ntp (hitcnt=0) 
+access-list lab-dmz-in line 8 extended deny ip any any log informational interval 300 (hitcnt=0) 
+access-list lab-global; 1 elements; name hash: 0x6217709
+access-list lab-global line 1 extended permit icmp any any echo-reply (hitcnt=0) 
+access-list lab-split; 2 elements; name hash: 0x32da6af7
+access-list lab-split line 1 standard permit 10.0.0.0 255.0.0.0 (hitcnt=0) 
+access-list lab-split line 2 standard permit host 192.0.2.200 (hitcnt=0) 
