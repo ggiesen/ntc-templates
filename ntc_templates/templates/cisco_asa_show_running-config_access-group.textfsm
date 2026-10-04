@@ -1,6 +1,12 @@
 Value ACCESS_LIST (\S+)
+Value DIRECTION (in|out)
 Value INTERFACE (\S+)
+Value PER_USER_OVERRIDE (per-user-override)
+Value CONTROL_PLANE (control-plane)
+Value GLOBAL (global)
 
 Start
-  ^access-group\s+${ACCESS_LIST}\s+in\s+interface\s+${INTERFACE}\s*$$ -> Record
+  ^access-group\s+${ACCESS_LIST}\s+${DIRECTION}\s+interface\s+${INTERFACE}(\s+${PER_USER_OVERRIDE})?(\s+${CONTROL_PLANE})?\s*$$ -> Record
+  ^access-group\s+${ACCESS_LIST}\s+${GLOBAL}\s*$$ -> Record
+  ^\s*$$
   ^. -> Error "Did not match any entries"

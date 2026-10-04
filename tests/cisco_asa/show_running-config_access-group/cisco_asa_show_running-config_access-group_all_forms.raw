@@ -1,0 +1,5 @@
+access-group pg-in in interface outside per-user-override
+access-group pg-out out interface outside
+access-group pg-dmz in interface dmz
+access-group pg-cp in interface management control-plane
+access-group pg-glob global
