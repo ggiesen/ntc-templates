@@ -36,6 +36,9 @@ Start
   ^Serial Number:\s${SERIAL}
   ^.+last modified by\s${LAST_MOD}
   ^Config\s+file\s+at\s+boot\s+was
+  ^Grub\s+Platform\s+is\s+\S+
+  ^GRUB\s+BIOS\s+Version\s*:
+  ^Secure\s+Boot\s+is\s*:
   ^Slot\s+\d:
   ^Firepower\s+Extensible\s+Operating\s+System\s+Version
   ^BIOS\s+Flash\s+Firmware\s+Hub

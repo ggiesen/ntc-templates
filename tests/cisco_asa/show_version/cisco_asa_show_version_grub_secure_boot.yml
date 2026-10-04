@@ -1,0 +1,24 @@
+---
+parsed_sample:
+  - cluster: "Enabled"
+    compile_date: "21-Sep-26"
+    device_mgr_version: "7.24(10)"
+    failover: "Active/Active"
+    flash: "8192MB"
+    hardware: "ASAv, 4096 MB RAM, CPU Lynnfield 2700 MHz, 1 CPU (2 cores)"
+    hostname: "napalm-ci-asav"
+    image: "boot:/asa92410-smp-k8.bin"
+    interfaces:
+      - "Management0/0"
+      - "GigabitEthernet0/0"
+      - "Internal-Data0/0"
+    last_mod: "napalm at 03:30:27.990 UTC Sun Oct 4 2026"
+    license_mode: "Smart Licensing"
+    license_state: "Unlicensed"
+    max_intf: ""
+    max_vlans: "50"
+    model: ""
+    serial:
+      - "9AGDJ4JAW5V"
+    uptime: "1 min 44 secs"
+    version: "9.24(10)"
