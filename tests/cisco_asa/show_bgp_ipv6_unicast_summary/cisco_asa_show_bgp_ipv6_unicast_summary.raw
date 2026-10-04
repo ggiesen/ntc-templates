@@ -1,0 +1,15 @@
+BGP router identifier 192.168.124.132, local AS number 65001
+BGP table version is 3, main routing table version 3
+2 network entries using 472 bytes of memory
+2 path entries using 208 bytes of memory
+2/2 BGP path/bestpath attribute entries using 416 bytes of memory
+1 BGP AS-PATH entries using 24 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 1120 total bytes of memory
+BGP activity 4/0 prefixes, 4/0 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+fd3a:4ae2:f0a2:124::133
+                4        65000 23      23             3    0    0 00:10:46  1       
+

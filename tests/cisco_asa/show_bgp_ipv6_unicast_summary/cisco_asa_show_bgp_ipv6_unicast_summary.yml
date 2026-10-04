@@ -1,0 +1,8 @@
+---
+parsed_sample:
+  - bgp_neigh: "fd3a:4ae2:f0a2:124::133"
+    local_as: "65001"
+    neigh_as: "65000"
+    router_id: "192.168.124.132"
+    state_pfxrcd: "1"
+    up_down: "00:10:46"
